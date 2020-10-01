@@ -1,0 +1,109 @@
+:root {
+  --crimson: #900f09;
+  --after-bar-offset: 130px;
+}
+
+/* Logo & Pictures */
+.cubeLogoEads {
+  margin-bottom: 40px;
+
+}
+
+/* Cube Hours */
+.hoursEads {
+  position: relative;
+  text-align: center;
+  margin-bottom: 21px;
+  font-family: "Open Sans", sans-serif;
+  margin: 42px 0px 21px 0px;
+  background-color:
+}
+
+
+.hoursEads h3 {
+  color: var(--crimson);
+  padding-top: 20px;
+  font-size: 36px;
+  font-family: 'Lato', 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+.hoursEads h4 {
+  font-size: 22px;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+.hoursEads p {
+  display: inline-block;
+  margin-bottom: 0px;
+  margin: 0px 3px 0px 3px;
+  font-size: 18px;
+}
+
+ span {
+  font-weight: bold;
+}
+
+.largeLeftColEads {
+  display: inline-block;
+  width: 35%;
+}
+
+.largeRightColEads {
+  display: inline-block;
+  width: 35%;
+}
+
+.headingEads::before {
+    position: absolute;
+    top: 0;
+    left: 17%;
+    height: 30px;
+    width: 30px;
+
+    content: "";
+    background-image: url(src/brackets.png);
+    background-size: cover;
+  }
+
+  .headingEads::after {
+      position: absolute;
+      bottom: -30px;
+      left: 83%;
+      height: 30px;
+      width: 30px;
+
+      content: "";
+      background-image: url(src/brackets.png);
+      background-size: cover;
+      transform: rotate(180deg);
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+    }
+
+/* Cube Description Paragraph */
+.featureTextEads {
+  margin-top: 50px;
+}
+
+/* Button to Forms */
+.btn {
+  width: 30%;
+  margin: 0% 35%;
+  background-color: white;
+  text-align: center;
+  padding: 11px 21px;
+  border-style: solid;
+  border-color: var(--crimson);
+  border-width: 4px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: var(--crimson);
+  color: white;
+}
