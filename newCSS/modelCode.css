@@ -1,9 +1,30 @@
-:root {--after-bar-offset: 130px;}
+/* The following is code is not linked to any HTML but serves as a reference for the site's design
+language. */
+
+:root {
+  --crimson: #900f09;
+  --after-bar-offset: 130px;
+}
+
+/* Playing with logo in header & at top of page*/
+.cubeLogoHeaderEads {
+  height: 45px;
+  position: absolute;
+  top: 27.5px;
+  left: 10px;
+  background-color: white;
+}
+
+.coeLogoEads {visibility:hidden;}
+
+@media (max-width: 1000px) {
+  .cubeLogoHeaderEads {visibility: hidden;}
+  .coeLogoEads {visibility:visible;}
+}
 
 /* Cube Hours Font Sizes, ETC*/
 .hoursEads h3 {
   color: var(--crimson);
-  font-weight: bold;
   padding-top: 20px;
   font-size: 36px;
   font-family: 'Lato', 'Open Sans', Helvetica, Arial, sans-serif;
@@ -13,12 +34,6 @@
   font-size: 22px;
   color: #444;
   margin-bottom: 6px;
-}
-
-.sticky-header-container {
-  display: sticky;
-  overflow: hidden;
-
 }
 
 .hoursEads p {
@@ -32,7 +47,7 @@ span {
   font-weight: bold;
 }
 
-/* Cube Hours Layout Section */
+/* ::before && ::after Model Code */
 .hoursEads {
   position: relative;
   text-align: center;
@@ -51,19 +66,6 @@ span {
   -moz-user-select: none; /* Make text non-selectable Firefox */
   -ms-user-select: none; /* Make text non-selectable IE10+/Edge */
   user-select: none; /* Make text non-selectable Standard */
-}
-
-.largeLeftColEads {
-  display: inline-block;
-  width: 45%;
-  padding-right: 6%;
-}
-
-.largeRightColEads {
-  display: inline-block;
-  width: 45%;
-  padding-left: 6%;
-
 }
 
 .hoursWrapperEads::before {
@@ -95,51 +97,7 @@ span {
     -o-transform: rotate(180deg);
 }
 
-@media (max-width: 1200px) {
-  .seperatorEads {
-    visibility: hidden;
-  }
-  .timeEads {
-    padding-left: 5px;
-  }
-}
-
-@media (max-width: 1000px) {
-  .seperatorEads {
-    visibility: visible;
-  }
-  .timeEads {
-    padding-left: 0px;
-  }
-  .largeLeftColEads, .largeRightColEads {
-    display: block;
-    width: 100%;
-    padding: 0px;
-  }
-  .hoursWrapperEads::after {
-    right: 10%;
-  }
-  .hoursWrapperEads::before {
-    left: 10%;
-  }
-}
-
-@media (max-width: 500px) {
-  .hoursWrapperEads::after {
-    right: 10%;
-  }
-  .hoursWrapperEads::before {
-    left: 10%;
-  }
-}
-
-
-/* Cube Description Paragraph */
-.featureTextEads {
-  margin-top: 50px;
-}
-
-/* Button to Forms */
+/* Button Model Code */
 .btn-wrapper-Eads {
   width: 80%;
   margin: 0% 10%;
@@ -151,7 +109,7 @@ span {
   width: 55%;
   margin: 0% 22.5%;
   padding: 0% 22.5%;
-  padding: 18px 42px;
+  padding: 14px 42px;
   height: auto;
   margin-top: 35px;
 
@@ -177,4 +135,18 @@ span {
     width: auto;
     font-size: 16px;
   }
+}
+
+/* Footer Adjustments */
+.footer-copyright {
+  margin-top: 0px;
+}
+
+footer.bg-alt {
+ padding-top:0px;
+}
+
+/* Remove padding on .site-content */
+.site-content {
+  padding: 20px 0 0 0
 }
