@@ -1,19 +1,28 @@
+var i = 0;
+
 function myFunction() {
-  document.getElementById("responseWrapperEads").classList.toggle("show");
-  document.getElementById("collapse").classList.toggle("show");
-  document.getElementById("dropdown").classList.toggle("show");
+  i++;
+  if (i%2 === 1) {
+    document.getElementById("dropdownContent").style.display = "block";
+    document.getElementById("show").style.visibility = "hidden";
+    document.getElementById("collapse").style.visibility = "visible";
+  } else {
+    document.getElementById("dropdownContent").style.display = "none";
+    document.getElementById("show").style.visibility = "visible";
+    document.getElementById("collapse").style.visibility = "hidden";
+  }
 }
 
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
+
+function myFunction2() {
+  i++;
+  if (i%2 === 1) {
+    document.getElementById("dropdownContent2").style.display = "block";
+    document.getElementById("show2").style.visibility = "hidden";
+    document.getElementById("collapse2").style.visibility = "visible";
+  } else {
+    document.getElementById("dropdownContent2").style.display = "none";
+    document.getElementById("show2").style.visibility = "visible";
+    document.getElementById("collapse2").style.visibility = "hidden";
   }
 }
