@@ -301,7 +301,7 @@ var ua_coe_submit_request = {"ajax_url":"https:\/\/thecube.eng.ua.edu\/wp-admin\
 					</div> <!-- .post-thumbnail -->
 
 	<div class="news-body">
-		<p>The Cube offers a wide variety of 3D printers as well as 3D scanners, Electronic Prototyping Equipment, and traditional manufacturing equipment.</p>
+		<p id="ourEquipmentEads">The Cube offers a wide variety of 3D printers as well as 3D scanners, Electronic Prototyping Equipment, and traditional manufacturing equipment.</p>
 
 		<div class="questionWrapperEads">
 			<div class="arrowWrapperEads">
@@ -311,9 +311,9 @@ var ua_coe_submit_request = {"ajax_url":"https:\/\/thecube.eng.ua.edu\/wp-admin\
 			</div>
 
 			<div class="responseWrapperEads">
-				<p class="responseEads">For most projects we recommend one of our Dremel printers. They are extremely reliable and are capable of printing at rather low resolutions.</p>
-			  <p class="responseEads">If you need higher detail or extremely small parts, we recomend one of our resin printers. Please note that these are <span>generally reserved for reseach or senior design</span>, but can be made available for students who show a need for the technology.</p>
-			  <p class="responseEads">For larger prints, we recomend our Ultimaker S5 or Dimension 1200. The both the Dimension and S5 feature a large print volume and soluble support material. Please note that the Dimension is very expensive to run and is generally <span>reserved for research or senior design</span>.</p>
+				<p class="responseEads">For most projects we recommend one of our <span>Dremel 3D45 printers</span>. They are extremely reliable and are capable of printing at rather low resolutions.</p>
+			  <p class="responseEads">If you need <span>higher detail or extremely small parts</span>, we recomend one of our resin printers. Please note that these are generally reserved for reseach or senior design, but can be made available for students who show a need for the technology.</p>
+			  <p class="responseEads">For <span>larger prints</span>, we recomend our Ultimaker S5 or Dimension 1200. The both the Dimension and S5 feature a large print volume and soluble support material. Please note that the Dimension is very expensive to run and is generally reserved for research or senior design.</p>
 			  <p class="questionEndEads">More questions? Come by 1003 H.M. Comer or <a class="emailLinkEads" href="thecube@ua.edu">email us</a>.</p>
 			</div>
 		</div>
@@ -327,53 +327,51 @@ var ua_coe_submit_request = {"ajax_url":"https:\/\/thecube.eng.ua.edu\/wp-admin\
 		  <p class="questionEndEads">More questions? Come by <span>1003 H.M. Comer</span> or <a href="thecube@ua.edu">email us</a>.</p>
 		</div>
 
-		<p class="responseEads">Please note that the Project Submission Form is intended for research, senior design, or other entities that can pay for prints using departmental transfers. If one such printer is needed for a personal project, design team, or club, please <a href="thecube@ua.edu">email us</a>.</p>
-
-		<h1 class="super-header">Plastic FFF/FDM 3D Printers</h1>
+		<h1 class="super-header">Plastic 3D Printers <span class="printerType">(FFF/FDM)</span></h1>
 		      <div class="section">
 		        <table class="tbl">
 		          <tbody>
 		            <tr>
-		              <th class="c1-3">Model</th>
-		              <th class="c2-3">Count</th>
-		              <th class="c3-3">Material Compatibiliy</th>
-		              <th class="c4-3">Build Volume</th>
-		              <th class="c5-3">Layer Resolution (Microns)</th>
-		              <th class="c6-3">Submission Method</th>
-		              <th class="c7-3">More Information</th>
+		              <th class="model firstCol">Model</th>
+		              <th class="count">Count</th>
+		              <th class="material">Material Compatibiliy</th>
+		              <th class="volume">Build Volume</th>
+		              <th class="resolution">Layer Resolution (μm)</th>
+		              <th class="submit">Submission Method</th>
+		              <th class="information">More Information</th>
 		            </tr>
-		            <tr>
-		              <td>Dremel 3D45</td>
-		              <td>8</td>
+		            <tr class="hoverable">
+		              <td class="firstCol">Dremel 3D45</td>
+		              <td class="count">8</td>
 		              <td>PLA, ABS, Nylon</td>
-		              <td>10"x6"x6"</td>
+		              <td>10" x 6" x 6"</td>
 		              <td>50 - 300</td>
 		              <td>3DprinterOS</td>
 		              <td>DropDownArrow</td>
 		            </tr>
-		            <tr>
-		              <td>Ultimaker S5</td>
-		              <td>1</td>
+		            <tr class="hoverable">
+		              <td class="firstCol">Ultimaker S5</td>
+		              <td class="count">1</td>
 		              <td>PLA, ToughPLA, PVA</td>
-		              <td>13"x9"x11"</td>
+		              <td>13" x 9" x 11"</td>
 		              <td>50 - 300</td>
 		              <td>3DprinterOS</td>
 		              <td>DropDownArrow</td>
 		            </tr>
-		            <tr>
-		              <td>MarkForged</td>
-		              <td>1</td>
-		              <td>Nylon, Onyx, Carbon Fiber, Kevlar</td>
-		              <td>12"x5"x6"</td>
+		            <tr class="hoverable">
+		              <td class="firstCol">MarkForged</td>
+		              <td class="count">1</td>
+		              <td>Onyx, Carbon Fiber, Kevlar</td>
+		              <td>12" x 5" x 6"</td>
 		              <td>100 - 200</td>
 		              <td>Project Submission Form</td>
 		              <td>DropDownArrow</td>
 		            </tr>
-		            <tr>
-		              <td>Dimension 1200</td>
-		              <td>1</td>
+		            <tr class="hoverable">
+		              <td class="firstCol">Dimension 1200</td>
+		              <td class="count">1</td>
 		              <td>ABS, Soluble</td>
-		              <td>10"x10"x12"</td>
+		              <td>10" x 10" x 12"</td>
 		              <td>50 - 300</td>
 		              <td>Project Submission Form</td>
 		              <td>DropDownArrow</td>
@@ -383,44 +381,44 @@ var ua_coe_submit_request = {"ajax_url":"https:\/\/thecube.eng.ua.edu\/wp-admin\
 		      </div>
 
 
-		      <h1 class="super-header">Resin SLA 3D Printers</h1>
+		      <h1 class="super-header">Resin 3D Printers <span class="printerType">(SLA)</span></h1>
 		            <div class="section">
 		              <table class="tbl">
 		                <tbody>
 		                  <tr>
-		                    <th class="c1-3">Model</th>
-		                    <th class="c2-3">Count</th>
-		                    <th class="c3-3">Material Compatibiliy</th>
-		                    <th class="c4-3">Build Volume</th>
-		                    <th class="c5-3">Layer Resolution (Microns)</th>
-		                    <th class="c6-3">Submission Method</th>
-		                    <th class="c7-3">More Information</th>
+		                    <th class="model firstCol">Model</th>
+		                    <th class="count">Count</th>
+		                    <th class="material">Material Compatibiliy</th>
+		                    <th class="volume">Build Volume</th>
+		                    <th class="resolution">Layer Resolution (μm)</th>
+		                    <th class="submit">Submission Method</th>
+		                    <th class="information">More Information</th>
 		                  </tr>
-		                  <tr>
-		                    <td>Form 3</td>
-		                    <td>1</td>
+		                  <tr class="hoverable">
+		                    <td class="firstCol">Form 3</td>
+		                    <td class="count">1</td>
 		                    <td>Resin</td>
-		                    <td>6"x6"x7"</td>
+		                    <td>6" x 6" x 7"</td>
 		                    <td>25 - 200</td>
 		                    <td>Project Submission Form</td>
 		                    <td>DropDownArrow</td>
 		                  </tr>
-		                  <tr>
-		                    <td>Projet 2500 Plus</td>
-		                    <td>1</td>
+		                  <tr class="hoverable">
+		                    <td class="firstCol">Projet 2500 Plus</td>
+		                    <td class="count">1</td>
 		                    <td>Resin</td>
-		                    <td>11"x8"x5"</td>
+		                    <td>11" x 8" x 5"</td>
 		                    <td>32</td>
 		                    <td>Project Submission Form</td>
 		                    <td>DropDownArrow</td>
 		                  </tr>
-		                  <tr>
-		                    <td>Form 3L</td>
-		                    <td>1</td>
+		                  <tr class="hoverable">
+		                    <td class="firstCol">Form 3L</td>
+		                    <td class="count">1</td>
 		                    <td>ABS, Soluble</td>
-		                    <td>13"x7"x11"</td>
+		                    <td>13" x 7" x 11"</td>
 		                    <td>25 - 200</td>
-		                    <td>Project Submission Form</td>
+												<td>Project Submission Form</td>
 		                    <td>DropDownArrow</td>
 		                  </tr>
 		                </tbody>
@@ -432,28 +430,28 @@ var ua_coe_submit_request = {"ajax_url":"https:\/\/thecube.eng.ua.edu\/wp-admin\
 		                    <table class="tbl">
 		                      <tbody>
 		                        <tr>
-		                          <th class="c1-3">Model</th>
-		                          <th class="c2-3">Count</th>
-		                          <th class="c3-3">Material Compatibiliy</th>
-		                          <th class="c4-3">Build Volume</th>
-		                          <th class="c5-3">Layer Resolution (Microns)</th>
-		                          <th class="c6-3">Submission Method</th>
-		                          <th class="c7-3">More Information</th>
+		                          <th class="model firstCol">Model</th>
+		                          <th class="count">Count</th>
+		                          <th class="material">Material Compatibiliy</th>
+		                          <th class="volume">Build Volume</th>
+		                          <th class="resolution">Layer Resolution (μm)</th>
+		                          <th class="submit">Submission Method</th>
+		                          <th class="information">More Information</th>
 		                        </tr>
-		                        <tr>
-		                          <td>Blackbelt Conveyor</td>
-		                          <td>1</td>
+		                        <tr class="hoverable">
+		                          <td class="firstCol">Blackbelt</td>
+		                          <td class="count">1</td>
 		                          <td>nGen</td>
-		                          <td>13"x ∞ x13"</td>
+		                          <td>13" x ∞ x 13"</td>
 		                          <td>25 - 200</td>
 		                          <td>Project Submission Form</td>
 		                          <td>DropDownArrow</td>
 		                        </tr>
-		                        <tr>
-		                          <td>Projet 460 Plus</td>
-		                          <td>1</td>
+		                        <tr class="hoverable">
+		                          <td class="firstCol">Projet 460 Plus</td>
+		                          <td class="count">1</td>
 		                          <td>Powder</td>
-		                          <td>8"x8"x10"</td>
+		                          <td>8" x 8" x 10"</td>
 		                          <td>4</td>
 		                          <td>Project Submission Form</td>
 		                          <td>DropDownArrow</td>
@@ -462,102 +460,9 @@ var ua_coe_submit_request = {"ajax_url":"https:\/\/thecube.eng.ua.edu\/wp-admin\
 		                    </table>
 		                  </div>
 
-<!--
-<h2><strong>FDM Printers</strong></h2>
-<h3><strong><img class="pull-right margin-left-10 wp-image-118 size-thumbnail img-responsive " src="wp-content/uploads/2020/04/Dremel-3D45-150x150.jpg" alt="Dremel 3D45 Machine" srcset="wp-content/uploads/2020/04/Dremel-3D45-150x150.jpg 150w, wp-content/uploads/2020/04/Dremel-3D45-300x300.jpg 300w, wp-content/uploads/2020/04/Dremel-3D45-768x768.jpg 768w, wp-content/uploads/2020/04/Dremel-3D45-1024x1024.jpg 1024w" sizes="(max-width: 150px) 100vw, 150px" />Dremel Digilab 3D45:</strong></h3>
-<ul>
-<li>Bed Size- 10in x 6in x 6in</li>
-<li>Layer Height- 50-300 microns</li>
-<li>Material types- PLA, ABS, Nylon, PETG</li>
-</ul>
-<p>We have 10 Dremel 3D45 printers which are an FDM style desktop printer. The Dremel offer a wide variety of color options in PLA as well as black ABS and Nylon plastic. The Dremel uses the same spool of material for the model as it does support. This requires the support material to be broken off with pliers after printing. This printer is ideal for quick and cost-effective prototyping.</p>
-<p>To print to the Dremel attend a 3DprinterOS class at The Cube to start submitting prints remotely.</p>
-<h3><strong><img class="pull-right margin-left-10 size-thumbnail wp-image-124 img-responsive " src="wp-content/uploads/2020/04/Stratasys-Dimension-150x150.jpg" alt="Stratasys Dimension Machine" />Stratsys Dimension SST 1200es:</strong></h3>
-<ul>
-<li>Bed Size- 10in x 10in x 12in</li>
-<li>Layer Height- 254 microns</li>
-<li>Material Type- ABS</li>
-</ul>
-<p>The Cube has 1 Stratasys Dimension printer that offers a variety of colors in ABS plastic. The Dimension is an industrial quality FDM style printer that uses a separate support dissolvable support material. Once the part has finished printed it soaks in a sodium hydroxide bath to dissolve the support material away. This printer is ideal for complex or moving parts that support material cannot be accessed easily by hand for removal.</p>
-<p>To print to the Dimension send your .stl file and the submission form to <a href="mailto:thecube@eng.ua.edu">thecube@eng.ua.edu</a> or bring both files by The Cube on a flash drive.</p>
-<h3><strong><img class="pull-right margin-left-10 size-thumbnail wp-image-117 img-responsive " src="wp-content/uploads/2020/04/Blackbelt-150x150.jpg" alt="Blackbelt" srcset="wp-content/uploads/2020/04/Blackbelt-150x150.jpg 150w, wp-content/uploads/2020/04/Blackbelt-300x300.jpg 300w, wp-content/uploads/2020/04/Blackbelt.jpg 500w" sizes="(max-width: 150px) 100vw, 150px" />Blackbelt Conveyor</strong><strong> Printer:</strong></h3>
-<ul>
-<li>Bed Size- 13in x 13in x unlimited length</li>
-<li>Layer Height- 100- 800 microns</li>
-<li>Material Type- nGen, PETG</li>
-</ul>
-<p>The Cube has 1 Blackbelt printer which is a desktop style FDM printer. This printer prints onto a conveyor belt allowing you to print very large parts for prototyping. This printer also prints at a 45-degree angle which allows for printing of hollows parts without support material inside. The support material is the same as the model material and must be pulled away with pliers. This printer is ideal for prototyping large parts quickly.</p>
-<p>To print to the Blackbelt send your .stl file and the submission form to <a href="mailto:thecube@eng.ua.edu">thecube@eng.ua.edu</a> or bring both files by The Cube on a flash drive.</p>
-<h2><strong>Polyjet Printers:</strong></h2>
-<h3><strong><img class="pull-right margin-left-10 size-thumbnail wp-image-123 img-responsive " src="wp-content/uploads/2020/04/Projet-2500-Plus-150x150.png" alt="Projet 2500 Plus Machine" srcset="wp-content/uploads/2020/04/Projet-2500-Plus-150x150.png 150w, wp-content/uploads/2020/04/Projet-2500-Plus-300x300.png 300w" sizes="(max-width: 150px) 100vw, 150px" />3D systems Projet2500 Plus:</strong></h3>
-<ul>
-<li>Bed Size- 11in x 8in x 5in</li>
-<li>Layer Height- 32 microns</li>
-<li>Material type- Visijet Resin</li>
-</ul>
-<p>The Cube has 1 Projet 2500 which is an industrial grade polyjet resin printer that can print in clear and black high strength resin. This printer has a dissolvable support material that is melted away in a steam bath and isopropyl alcohol bath. The low layer thickness and layer bonding process allows for watertight parts. This printer is ideal for parts that need to be see through or have complex cavities inside the part.</p>
-<p>To print to the Projet 2500 send your .stl file and the submission form to <a href="mailto:thecube@eng.ua.edu">thecube@eng.ua.edu</a> or bring both files by The Cube on a flash drive.</p>
-<h2><strong>SLA Printers:</strong></h2>
-<h3><strong><img class="pull-right margin-left-10 size-thumbnail wp-image-120 img-responsive " src="wp-content/uploads/2020/04/Form-3-150x150.jpg" alt="Form 3 Machine" srcset="wp-content/uploads/2020/04/Form-3-150x150.jpg 150w, wp-content/uploads/2020/04/Form-3-300x300.jpg 300w" sizes="(max-width: 150px) 100vw, 150px" />Formlabs Form 3:</strong></h3>
-<ul>
-<li>Bed Size- 5in x 5in x 7in</li>
-<li>Layer Height- 25 – 200 microns</li>
-<li>Material type- Resin</li>
-</ul>
-<p>The Cube has 1 Form 3 printer which is a desktop style SLA printer that prints in both clear and grey resin. This printer uses the same resin for support material as it does the model which is easily removed with pliers. This printer is ideal for small parts that FDM style printing is not capable of and is still quick and cost effective.</p>
-<p>To print to the Form 3 send your .stl file and the submission form to <a href="mailto:thecube@eng.ua.edu">thecube@eng.ua.edu</a> or bring both files by The Cube on a flash drive.</p>
-<h3><strong><img class="pull-right margin-left-10 size-thumbnail wp-image-121 img-responsive " src="wp-content/uploads/2020/04/Form-3L-150x150.jpg" alt="Form 3L Machine" srcset="wp-content/uploads/2020/04/Form-3L-150x150.jpg 150w, wp-content/uploads/2020/04/Form-3L-300x300.jpg 300w, wp-content/uploads/2020/04/Form-3L-768x768.jpg 768w, wp-content/uploads/2020/04/Form-3L.jpg 880w" sizes="(max-width: 150px) 100vw, 150px" />Formlabs Form 3L:</strong></h3>
-<ul>
-<li>Bed Size- 13in x 7in x 11in</li>
-<li>Layer Height- 25 – 200 microns</li>
-<li>Material type- Resin</li>
-</ul>
-<p>The Cube has 1 Form 3L printer which is a desktop style SLA printer that prints in both clear and grey resin. This printer uses the same resin for support material as it does the model which is easily removed with pliers. This printer has a larger print bed than the Form 3 allowing for bigger parts that need the same fine layer height. This printer is ideal for small parts that FDM style printing is not capable of and is still quick and cost effective.</p>
-<p>To print to the Form 3L send your .stl file and the submission form to <a href="mailto:thecube@eng.ua.edu">thecube@eng.ua.edu</a> or bring both files by The Cube on a flash drive.</p>
-<h2><strong>Powder Printers:</strong></h2>
-<h3><strong><img class="pull-right margin-left-10 size-thumbnail wp-image-122 img-responsive " src="wp-content/uploads/2020/04/Projet-460-150x150.png" alt="Projet 460 Machine" srcset="wp-content/uploads/2020/04/Projet-460-150x150.png 150w, wp-content/uploads/2020/04/Projet-460-300x300.png 300w" sizes="(max-width: 150px) 100vw, 150px" />3D systems Projet 460 Plus:</strong></h3>
-<ul>
-<li>Bed Size- 8in x 8in x 10 in</li>
-<li>Layer Height- 4 microns</li>
-<li>Material Type- Powder</li>
-</ul>
-<p>The Cube has 1 Projet 460 which is an industrial grade powder printer. This printer uses a powder and glue to print parts. It also has an inkjet printer cartridge to color the powder as it prints which allows intricate coloring of parts for prototyping or presentation. Loose powder is used as a support material so there is no support material to remove from the part once it has finished printing. This printer is ideal for prototyping and presenting parts that require different colors throughout the part.</p>
-<p>To print to the Projet 460 send your .stl file and the submission form to <a href="mailto:thecube@eng.ua.edu">thecube@eng.ua.edu</a> or bring both files by The Cube on a flash drive.</p>
-<h2><strong>3D Scanners:</strong></h2>
-<h3><strong><img class="pull-right margin-left-10 size-thumbnail wp-image-115 img-responsive " src="wp-content/uploads/2020/04/Artec-Eva-150x150.png" alt="Artec Eva Machine" srcset="wp-content/uploads/2020/04/Artec-Eva-150x150.png 150w, wp-content/uploads/2020/04/Artec-Eva-300x300.png 300w" sizes="(max-width: 150px) 100vw, 150px" />Artec Eva Scanner:</strong></h3>
-<ul>
-<li>Resolution- .5mm</li>
-<li>Working Distance- .4- 1m</li>
-</ul>
-<p>The Cube has 1 Artec Eva Scanner to scan a part for 3D printing or reverse engineering in Solidworks. This scanner allows you to scan parts without placing markers and captures color allowing parts to be rendered in their original color. This scanner is ideal for scanning large or simple parts.</p>
-<h3><strong><img class="pull-right margin-left-10 size-thumbnail wp-image-116 img-responsive " src="wp-content/uploads/2020/04/Artec-Spider-150x150.png" alt="Artec Spider Machine" srcset="wp-content/uploads/2020/04/Artec-Spider-150x150.png 150w, wp-content/uploads/2020/04/Artec-Spider-300x300.png 300w" sizes="(max-width: 150px) 100vw, 150px" />Artec Space Spider Scanner</strong>:</h3>
-<ul>
-<li>Resolution- .1mm</li>
-<li>Working Distance- .2-.3m</li>
-</ul>
-<p>The Cube has 1 Artec Space Spider to scan a part for 3D printing or reverse engineering in Solidworks. This scanner allows you to scan parts without placing markers and captures color allowing parts to be rendered in their original color. This scanner is ideal for scanning small or complex parts.</p>
-<h2><strong>Electronic Prototyping Equipment:</strong></h2>
-<h3><strong>Milling Machine </strong>(T-Tech QC-J5)</h3>
-<p>This milling machine is capable of producing circuit boards for student use. These boards are cost free, and can be used for whatever purpose the board is designed for, whether it be for senior design, research, or even a personal project.</p>
-<h3><strong>Solder Paste Printer </strong>(LPFK ProtoPrint S)</h3>
-<p>This piece of equipment is used to hold a stencil in place to ensure a smooth and precise amount of solder is applied.</p>
-<h3><strong>Pick and Place machine </strong>(MC400)</h3>
-<p>A Pick and Place machine has the capabilities of picking up very small components, and placing them in precise locations with extreme accuracy, at a very efficient rate. The machine we have in the lab is automatic, which means that long strips of components can be placed in the machine, and as long as components are available, the machine will run on its own.</p>
-<h3><strong>Reflow Oven </strong>(T-962A)</h3>
-<p>A reflow oven is used to melt the solder paste, forming a bond that holds the component in its place. After this step you are left with a finalized product, ready for testing</p>
-<h3><strong>Laser </strong>(Epilog Helix 60W)</h3>
-<p>The laser can be used for various projects utilizing both cutting and engraving, however, the main purpose of the laser is to create stencils for circuit boards. The laser is capable of cutting out “pads” for solder paste to be applied.</p>
-<h2><strong>Traditional manufacturing equipment:</strong></h2>
-<h3><strong>Waterjet Table</strong></h3>
-<p>The waterjet table uses a combination of high pressure water and garnet to cut 2D objects up to 4’ x 8’ in size (thickness dependent on material). This equipment can be used to cut virtually any material from high density foam to stainless steel to various composites.</p>
-<p>Designs must in a .DXF format.</p>
-<h3><strong>Plasma Cutter </strong></h3>
-<p>The plasma cutter is capable of cutting 2D objects up to 4’ x 5’ x .75” in size out of stainless steel or carbon steel.</p>
-<p>Designs must in a .DXF format.</p>
-<h3><strong><img class="pull-right margin-left-10 size-thumbnail wp-image-119 img-responsive " src="wp-content/uploads/2020/04/Epilog-Zing-Laser-30-Watt-150x150.jpg" alt="Epilog Zing Laser 30 Watt Machine" srcset="wp-content/uploads/2020/04/Epilog-Zing-Laser-30-Watt-150x150.jpg 150w, wp-content/uploads/2020/04/Epilog-Zing-Laser-30-Watt-300x300.jpg 300w" sizes="(max-width: 150px) 100vw, 150px" />Laser</strong> (Epilog Zing 30W)</h3>
-<p>The laser can be used for various projects utilizing both cutting and engraving. The max size for this laser is approximately 16” x 12”. It is used primarily for balsa wood and thin plastics.</p>
-<p>Designs must be in Adobe Illustrator.</p>
--->
+											<div class="btn-wrapper-Eads">
+												<a href="index.html@p=11.html#submitFormEads" class="btn">Project Submission Form</a>
+											</div>
 			</div> <!-- .news-body -->
 </article>
                 </div> <!-- .col-md-9 -->
@@ -565,30 +470,7 @@ var ua_coe_submit_request = {"ajax_url":"https:\/\/thecube.eng.ua.edu\/wp-admin\
         </div> <!-- .container -->
     </section>
 	<footer class="bg-alt">
-				<div class="container">
-	    	<div class="row">
-				<div class="col-md-4">
-					<h2>Academic Departments</h2><div class="textwidget custom-html-widget"><a href="http://aem.eng.ua.edu/">Aerospace Engineering and Mechanics</a> <br>
-<a href="http://che.eng.ua.edu/">Chemical and Biological Engineering</a><br>
-<a href="http://cce.eng.ua.edu/">Civil, Construction and Environmental Engineering</a><br>
-<a href="http://cs.ua.edu/">Computer Science</a><br>
-<a href="http://ece.eng.ua.edu/">Electrical and Computer Engineering</a><br>
-<a href="http://me.eng.ua.edu/">Mechanical Engineering</a><br>
-<a href="http://mte.eng.ua.edu/">Metallurgical and Materials Engineering</a></div>				</div> <!-- .col-md-4 -->
 
-				<div class="col-md-4">
-									</div> <!-- .col-md-4 -->
-
-				<div class="col-md-4">
-					<h2>Research Centers</h2><div class="textwidget custom-html-widget"><a href="https://iac.ua.edu/">Alabama Industrial Assessment Center</a><br>
-<a href="http://caps.ua.edu/">Center for Advanced Public Safety</a><br>
-<a href="http://cavt.eng.ua.edu/">Center for Advanced Vehicle Technologies</a><br>
-<a href="http://mint.ua.edu/">Center for Materials for Information Technologies</a><br>
-<a href="http://csi.eng.ua.edu/">Center for Sustainable Infrastructure</a><br>
-<a href="http://icast.eng.ua.edu/">Integrative Center for Athletic and Sport Technologies</a><br>
-<a href="http://utca.eng.ua.edu/">University Transportation Center for Alabama</a></div>				</div> <!-- .col-md-4 -->
-			</div> <!-- .row -->
-		</div> <!-- .container -->
 				<div class="footer-copyright bg-primary">
 			<div class="container">
 				<div class="row">

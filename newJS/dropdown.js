@@ -2,7 +2,6 @@ function myFunction() {
   document.getElementById("responseWrapperEads").classList.toggle("show");
   document.getElementById("collapse").classList.toggle("show");
   document.getElementById("dropdown").classList.toggle("show");
-
 }
 
 // Close the dropdown menu if the user clicks outside of it

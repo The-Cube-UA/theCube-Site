@@ -62,3 +62,76 @@ span, .questionEndEads {
   position: absolute;
   top: 73px;
 }
+
+th {
+  padding-bottom: 4px;
+  border-width: 1px;
+  border-color: #7C7D7E;
+  border-bottom-style: solid;
+}
+
+td {
+  padding: 11px 0px;
+  border-width: 1px;
+  border-bottom-style: solid;
+  border-color: #C2C3C4;
+}
+
+tr.hoverable:hover {
+  background-color: #A0A1A290;
+}
+
+.tbl {
+  width: 97%;
+  margin: 0px 1.5%;
+}
+
+.printerType {
+  font-size: 22px;
+  font-weight: normal;
+  color: #A0A1A2;
+}
+
+.firstCol {
+  padding-left: 10px;
+}
+
+.model {width: 12.75%}
+.count {
+  text-align: center;
+  width: 6.25%;
+}
+.material {width: 18%}
+.volume {width: 12.5%}
+.resolution {width: 17.5%}
+.submit {width: 18.5%}
+.information {width: 14%}
+
+.btn {
+  min-width: 350px;
+  width: 50%;
+  margin: 21px 25%;
+  padding: 18px 42px;
+  height: auto;
+  margin-top: 35px;
+
+  line-height: 1.15;
+  background-color: white;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 18px;
+
+  border: solid 3px var(--crimson);
+}
+
+.btn:hover {
+  background: var(--crimson);
+  color: white;
+  border: solid 3px var(--crimson);
+}
+
+.news, .news-v2 {
+  margin-bottom: 16px;
+}
