@@ -302,13 +302,13 @@ var ua_coe_submit_request = {"ajax_url":"https:\/\/thecube.eng.ua.edu\/wp-admin\
 					</div> <!-- .post-thumbnail -->
 
 	<div class="news-body">
-		<p id="ourEquipmentEads">The Cube offers a wide variety of 3D printers as well as 3D scanners, Electronic Prototyping Equipment, and traditional manufacturing equipment.</p>
+		<h3>The Cube offers a wide variety of 3D printers as well as 3D scanners, Electronic Prototyping Equipment, laser cutters, and traditional manufacturing equipment.</h3>
 
 		<div id="questionWrap"class="questionWrapperEads">
-			<div class="arrowWrapperEads">
+			<div onclick="bestPrinterExpand()" class="arrowWrapperEads">
 				<p class="questionEads">Which printer is best for my project?</p>
-			  <i onclick="myFunction()" id="collapse" class="arrow down"></i>
-				<i onclick="myFunction()" id="show" class="arrow left"></i>
+			  <i onclick="bestPrinterExpand()" id="collapse" class="arrow down"></i>
+				<i onclick="bestPrinterExpand()" id="show" class="arrow left"></i>
 			</div>
 
 			<div id="dropdownContent" class="responseWrapperEads">
@@ -320,157 +320,275 @@ var ua_coe_submit_request = {"ajax_url":"https:\/\/thecube.eng.ua.edu\/wp-admin\
 		</div>
 
 		<div class="questionWrapperEads">
-			<div class="arrowWrapperEads">
+			<div onclick="bestFilament()" class="arrowWrapperEads">
 				<p class="questionEads">What filament should I choose?</p>
-				<i onclick="myFunction2()" id="collapse2" class="arrow down"></i>
-				<i onclick="myFunction2()" id="show2" class="arrow left"></i>
+				<i onclick="bestFilament()" id="collapse2" class="arrow down"></i>
+				<i onclick="bestFilament()" id="show2" class="arrow left"></i>
 			</div>
 
 			<div id="dropdownContent2" class="responseWrapperEads2">
-				<p class="responseEads">For most applications, PLA is more than suitable. Please note that if the part will be exposed to heat, or left outside, it could deform over long periods of time.</p>
+				<p class="responseEads">For most applications, PLA is more than suitable and recommended for most applications.</p>
 			  <p class="responseEads">Alternatively, ABS and Onyx are slightly stronger than PLA and more resilent to heat.</p>
 			  <p class="responseEads">The Cube also maintains small stocks of Carbon Fiber, Kevlar, and other fibers for the MarkForged MK II. Please note that these are extremely expensive materials and are reserved for research and extreme need cases.</p>
 			  <p class="questionEndEads">More questions? Come by <span>1003 H.M. Comer</span> or <a href="thecube@ua.edu">email us</a>.</p>
 			</div>
 		</div>
 
+
+		<!-- Table Header -->
 		<h1 class="super-header">Plastic 3D Printers <span class="printerType">(FFF/FDM)</span></h1>
-		      <div class="section">
-		        <table class="tbl">
-		          <tbody>
-		            <tr>
-		              <th class="model firstCol">Model</th>
-		              <th class="count">Count</th>
-		              <th class="material">Material Compatibiliy</th>
-		              <th class="volume">Build Volume</th>
-		              <th class="resolution">Layer Resolution (μm)</th>
-		              <th class="submit">Submission Method</th>
-		              <th class="information">More Information</th>
-		            </tr>
-		            <tr class="hoverable">
-		              <td class="firstCol">Dremel 3D45</td>
-		              <td class="count">8</td>
-		              <td>PLA, ABS, Nylon</td>
-		              <td>10" x 6" x 6"</td>
-		              <td>50 - 300</td>
-		              <td>3DprinterOS</td>
-		              <td>DropDownArrow</td>
-		            </tr>
-		            <tr class="hoverable">
-		              <td class="firstCol">Ultimaker S5</td>
-		              <td class="count">1</td>
-		              <td>PLA, ToughPLA, PVA</td>
-		              <td>13" x 9" x 11"</td>
-		              <td>50 - 300</td>
-		              <td>3DprinterOS</td>
-		              <td>DropDownArrow</td>
-		            </tr>
-		            <tr class="hoverable">
-		              <td class="firstCol">MarkForged</td>
-		              <td class="count">1</td>
-		              <td>Onyx, Carbon Fiber, Kevlar</td>
-		              <td>12" x 5" x 6"</td>
-		              <td>100 - 200</td>
-		              <td>Project Submission Form</td>
-		              <td>DropDownArrow</td>
-		            </tr>
-		            <tr class="hoverable">
-		              <td class="firstCol">Dimension 1200es</td>
-		              <td class="count">1</td>
-		              <td>ABS, Soluble</td>
-		              <td>10" x 10" x 12"</td>
-		              <td>50 - 300</td>
-		              <td>Project Submission Form</td>
-		              <td>DropDownArrow</td>
-		            </tr>
-		          </tbody>
-		        </table>
-		      </div>
+		<table class="tbl">
+		  <tbody>
+		    <th class="model rowPadding">Model</th>
+		    <th class="count">Count</th>
+		    <th class="material">Material Compatibiliy</th>
+		    <th class="volume">Build Volume</th>
+		    <th class="resolution">Layer Resolution (μm)</th>
+		    <th class="submit">Submission Method</th>
+		    <th class="information"></th>
+		  </tbody>
+		</table>
 
+		<!-- Dremel 3D45 -->
 
-		      <h1 class="super-header">Resin 3D Printers <span class="printerType">(SLA)</span></h1>
-		            <div class="section">
-		              <table class="tbl">
-		                <tbody>
-		                  <tr>
-		                    <th class="model firstCol">Model</th>
-		                    <th class="count">Count</th>
-		                    <th class="material">Material Compatibiliy</th>
-		                    <th class="volume">Build Volume</th>
-		                    <th class="resolution">Layer Resolution (μm)</th>
-		                    <th class="submit">Submission Method</th>
-		                    <th class="information">More Information</th>
-		                  </tr>
-		                  <tr class="hoverable">
-		                    <td class="firstCol">Form 3</td>
-		                    <td class="count">1</td>
-		                    <td>Resin</td>
-		                    <td>6" x 6" x 7"</td>
-		                    <td>25 - 200</td>
-		                    <td>Project Submission Form</td>
-		                    <td>DropDownArrow</td>
-		                  </tr>
-		                  <tr class="hoverable">
-		                    <td class="firstCol">Projet 2500 Plus</td>
-		                    <td class="count">1</td>
-		                    <td>Resin</td>
-		                    <td>11" x 8" x 5"</td>
-		                    <td>32</td>
-		                    <td>Project Submission Form</td>
-		                    <td>DropDownArrow</td>
-		                  </tr>
-		                  <tr class="hoverable">
-		                    <td class="firstCol">Form 3L</td>
-		                    <td class="count">1</td>
-		                    <td>ABS, Soluble</td>
-		                    <td>13" x 7" x 11"</td>
-		                    <td>25 - 200</td>
-												<td>Project Submission Form</td>
-		                    <td>DropDownArrow</td>
-		                  </tr>
-		                </tbody>
-		              </table>
-		            </div>
+		<table class="tbl">
+		  <tr class="hoverable" onclick="expandDremel()">
+		    <td class="model rowPadding">Dremel 3D45</td>
+		    <td class="count">8</td>
+		    <td class="material">PLA, ABS, Nylon</td>
+		    <td class="volume">10" x 6" x 6"</td>
+		    <td class="resolution">50 - 300</td>
+		    <td class="submit">3DprinterOS</td>
+		    <td class="information">More Information</td>
+		  </tr>
+		</table>
 
-		            <h1 class="super-header">Specialty Printers</h1>
-		                  <div class="section">
-		                    <table class="tbl">
-		                      <tbody>
-		                        <tr>
-		                          <th class="model firstCol">Model</th>
-		                          <th class="count">Count</th>
-		                          <th class="material">Material Compatibiliy</th>
-		                          <th class="volume">Build Volume</th>
-		                          <th class="resolution">Layer Resolution (μm)</th>
-		                          <th class="submit">Submission Method</th>
-		                          <th class="information">More Information</th>
-		                        </tr>
-		                        <tr class="hoverable">
-		                          <td class="firstCol">Blackbelt</td>
-		                          <td class="count">1</td>
-		                          <td>nGen</td>
-		                          <td>13" x ∞ x 13"</td>
-		                          <td>25 - 200</td>
-		                          <td>Project Submission Form</td>
-		                          <td>DropDownArrow</td>
-		                        </tr>
-		                        <tr class="hoverable">
-		                          <td class="firstCol">Projet 460 Plus</td>
-		                          <td class="count">1</td>
-		                          <td>Powder</td>
-		                          <td>8" x 8" x 10"</td>
-		                          <td>4</td>
-		                          <td>Project Submission Form</td>
-		                          <td>DropDownArrow</td>
-		                        </tr>
-		                      </tbody>
-		                    </table>
-		                  </div>
+		<table class="tbl hiddenContentDremel" id="dremelHidden">
+			<tbody class="hiddenBody">
+				<td class="rowPadding hiddenRow">
+		      Hidden Content
+		      <img class="printerPic" src="./newCSS/src/dremel.jpg" alt="Dremel 3D45">
+		    </td>
+			</tbody>
+		</table>
 
-											<div class="btn-wrapper-Eads">
-												<a href="index.html@p=11.html#submitFormEads" class="btn">Project Submission Form</a>
-											</div>
-			</div> <!-- .news-body -->
+		<!-- Ultimaker S5 -->
+
+		<table class="tbl">
+		  <tr class="hoverable" onclick="expandS5()">
+		    <td class="model rowPadding">Ultimaker S5</td>
+		    <td class="count">1</td>
+		    <td class="material">PLA, ToughPLA, PVA</td>
+		    <td class="volume">13" x 9" x 11"</td>
+		    <td class="resolution">50 - 300</td>
+		    <td class="submit">3DprinterOS</td>
+		    <td class="information">More Information</td>
+		  </tr>
+		</table>
+
+		<table class="tbl hiddenContents5" id="s5Hidden">
+			<tbody class="hiddenBody">
+				<td class="rowPadding hiddenRow">
+					Hidden Content
+					<img class="printerPic" src="./newCSS/src/dremel.jpg" alt="Dremel 3D45">
+				</td>
+			</tbody>
+		</table>
+
+		<!-- MarkForged -->
+
+		<table class="tbl">
+		  <tr class="hoverable" onclick="expandMKF()">
+		    <td class="model rowPadding">MarkForged MK II</td>
+		    <td class="count">1</td>
+		    <td class="material">Onyx, Carbon Fiber, Kevlar</td>
+		    <td class="volume">12" x 5" x 6"</td>
+		    <td class="resolution">100 - 200</td>
+		    <td class="submit">Project Submission Form</td>
+		    <td class="information">More Information</td>
+		  </tr>
+		</table>
+
+		<table class="tbl hiddenContentMKF" id="mkfHidden">
+			<tbody class="hiddenBody">
+				<td class="rowPadding hiddenRow">
+					Hidden Content
+					<img class="printerPic" src="./newCSS/src/dremel.jpg" alt="Dremel 3D45">
+				</td>
+			</tbody>
+		</table>
+
+		<!-- Dimension -->
+
+		<table class="tbl">
+		  <tr class="hoverable" onclick="expandDimension()">
+		    <td class="model rowPadding">Dimension 1200es</td>
+		    <td class="count">1</td>
+		    <td class="material">ABS, Soluble</td>
+		    <td class="volume">10" x 10" x 12"</td>
+		    <td class="resolution">50 - 300</td>
+		    <td class="submit">Project Submission Form</td>
+		    <td class="information">More Information</td>
+		  </tr>
+		</table>
+
+		<table class="tbl hiddenContentDimension" id="dimensionHidden">
+			<tbody class="hiddenBody">
+				<td class="rowPadding hiddenRow">
+					Hidden Content
+					<img class="printerPic" src="./newCSS/src/dremel.jpg" alt="Dremel 3D45">
+				</td>
+			</tbody>
+		</table>
+
+		<!-- Table Header -->
+		<h1 class="super-header">Resin 3D Printers <span class="printerType">(SLA)</span></h1>
+		<table class="tbl">
+		  <tbody>
+		    <th class="model rowPadding">Model</th>
+		    <th class="count">Count</th>
+		    <th class="material">Material Compatibiliy</th>
+		    <th class="volume">Build Volume</th>
+		    <th class="resolution">Layer Resolution (μm)</th>
+		    <th class="submit">Submission Method</th>
+		    <th class="information"></th>
+		  </tbody>
+		</table>
+
+		<!-- Form 3 -->
+
+		<table class="tbl">
+		  <tr class="hoverable" onclick="expandForm3()">
+		    <td class="model rowPadding">Form 3</td>
+		    <td class="count">1</td>
+		    <td class="material">Resin</td>
+		    <td class="volume">6" x 6" x 7"</td>
+		    <td class="resolution">25 - 200</td>
+		    <td class="submit">Project Submission Form</td>
+		    <td class="information">More Information</td>
+		  </tr>
+		</table>
+
+		<table class="tbl hiddenContentForm3" id="form3Hidden">
+			<tbody class="hiddenBody">
+				<td class="rowPadding hiddenRow">
+					Hidden Content
+					<img class="printerPic" src="./newCSS/src/dremel.jpg" alt="Dremel 3D45">
+				</td>
+			</tbody>
+		</table>
+
+		<!-- Projet 2500 Plus -->
+
+		<table class="tbl">
+		  <tr class="hoverable" onclick="expand2500()">
+		    <td class="model rowPadding">Projet 2500 Plus</td>
+		    <td class="count">1</td>
+		    <td class="material">Resin</td>
+		    <td class="volume">11" x 8" x 5"</td>
+		    <td class="resolution">32</td>
+		    <td class="submit">Project Submission Form</td>
+		    <td class="information">More Information</td>
+		  </tr>
+		</table>
+
+		<table class="tbl hiddenContent2500" id="projet2500Hidden">
+			<tbody class="hiddenBody">
+				<td class="rowPadding hiddenRow">
+					Hidden Content
+					<img class="printerPic" src="./newCSS/src/dremel.jpg" alt="Dremel 3D45">
+				</td>
+			</tbody>
+		</table>
+
+		<!-- Form 3L -->
+
+		<table class="tbl">
+		  <tr class="hoverable" onclick="expand3L()">
+		    <td class="model rowPadding">Form 3L</td>
+		    <td class="count">1</td>
+		    <td class="material">Resin</td>
+		    <td class="volume">13" x 7" x 11"</td>
+		    <td class="resolution">25 - 200</td>
+		    <td class="submit">Project Submission Form</td>
+		    <td class="information">More Information</td>
+		  </tr>
+		</table>
+
+		<table class="tbl hiddenContent3L" id="form3LHidden">
+			<tbody class="hiddenBody">
+				<td class="rowPadding hiddenRow">
+					Hidden Content
+					<img class="printerPic" src="./newCSS/src/dremel.jpg" alt="Dremel 3D45">
+				</td>
+			</tbody>
+		</table>
+
+		<!-- Table Header -->
+		<h1 class="super-header">Specialty Printers</h1>
+		<table class="tbl">
+		  <tbody>
+		    <th class="model rowPadding">Model</th>
+		    <th class="count">Count</th>
+		    <th class="material">Material Compatibiliy</th>
+		    <th class="volume">Build Volume</th>
+		    <th class="resolution">Layer Resolution (μm)</th>
+		    <th class="submit">Submission Method</th>
+		    <th class="information"></th>
+		  </tbody>
+		</table>
+
+		<!-- Blackbelt -->
+
+		<table class="tbl">
+		  <tr class="hoverable" onclick="expandBlackBelt()">
+		    <td class="model rowPadding">Blackbelt</td>
+		    <td class="count">1</td>
+		    <td class="material">nGen</td>
+		    <td class="volume">13" x ∞ x 13"</td>
+		    <td class="resolution">100 - 300</td>
+		    <td class="submit">Project Submission Form</td>
+		    <td class="information">More Information</td>
+		  </tr>
+		</table>
+
+		<table class="tbl hiddenContentBlackBelt" id="blackBeltHidden">
+			<tbody class="hiddenBody">
+				<td class="rowPadding hiddenRow">
+					Hidden Content
+					<img class="printerPic" src="./newCSS/src/dremel.jpg" alt="Dremel 3D45">
+				</td>
+			</tbody>
+		</table>
+
+		<!-- ProJet 460 Plus -->
+
+		<table class="tbl">
+		  <tr class="hoverable" onclick="expand460()" >
+		    <td class="model rowPadding">Test</td>
+		    <td class="count">1</td>
+		    <td class="material">Powder</td>
+		    <td class="volume">8" x 8" x 10"</td>
+		    <td class="resolution">4</td>
+		    <td class="submit">Project Submission Form</td>
+		    <td class="information">More Information</td>
+		  </tr>
+		</table>
+
+		<table class="tbl hiddenContent460" id="460Hidden">
+			<tbody class="hiddenBody">
+				<td class="rowPadding hiddenRow">
+					Hidden Content
+					<img class="printerPic" src="./newCSS/src/dremel.jpg" alt="Dremel 3D45">
+				</td>
+			</tbody>
+		</table>
+
+		<div class="btn-wrapper-Eads">
+			<a href="index.html@p=11.html#submitFormEads" class="btn">Project Submission Form</a>
+		</div>
+
+	</div> <!-- .news-body -->
 </article>
                 </div> <!-- .col-md-9 -->
             </div> <!-- .row -->
