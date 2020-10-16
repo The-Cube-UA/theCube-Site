@@ -27,86 +27,173 @@ function bestFilament() {
   }
 }
 
+// Dremel 3D45 //
+let dremelOpen = false;
+document.addEventListener('click', function(event) {
+  var hiddenContent = "dremelHidden";
+  var isClickInside = dremelHidden.contains(event.target);
+  var isClickHead = dremelHead.contains(event.target);
 
-//Functions for dropdowns in tables.
-
-function expandDremel() {
-  c++;
-  if (c%2 === 1) {
-    document.getElementById("dremelHidden").style.display = "block";
-  } else {
-    document.getElementById("dremelHidden").style.display = "none";
+  if ((isClickHead) && (dremelOpen == false)) {
+    document.getElementById(hiddenContent).style.display = "block";
+    dremelOpen = true;
+  } else if ((isClickHead) && dremelOpen == true) {
+    document.getElementById(hiddenContent).style.display = "none";
+    dremelOpen = false;
+  } else if ((!isClickInside) && (!isClickHead) && (dremelOpen == true)) {
+    document.getElementById(hiddenContent).style.display = "none";
+    dremelOpen = false;
   }
-}
+});
 
-function expandS5() {
-  d++;
-  if (d%2 === 1) {
-    document.getElementById("s5Hidden").style.display = "block";
-  } else {
-    document.getElementById("s5Hidden").style.display = "none";
-  }
-}
+// Ultimaker S5 //
+let s5Open = false;
+document.addEventListener('click', function(event) {
+  var hiddenContent = "s5Hidden";
+  var isClickInside = s5Hidden.contains(event.target);
+  var isClickHead = s5head.contains(event.target);
 
-function expandMKF() {
-  e++;
-  if (e%2 === 1) {
-    document.getElementById("mkfHidden").style.display = "block";
-  } else {
-    document.getElementById("mkfHidden").style.display = "none";
+  if ((isClickHead) && (s5Open == false)) {
+    document.getElementById(hiddenContent).style.display = "block";
+    s5Open = true;
+  } else if ((isClickHead) && s5Open == true) {
+    document.getElementById(hiddenContent).style.display = "none";
+    s5Open = false;
+  } else if ((!isClickInside) && (!isClickHead) && (s5Open == true)) {
+    document.getElementById(hiddenContent).style.display = "none";
+    s5Open = false;
   }
-}
+});
 
-function expandDimension() {
-  f++;
-  if (f%2 === 1) {
-    document.getElementById("dimensionHidden").style.display = "block";
-  } else {
-    document.getElementById("dimensionHidden").style.display = "none";
-  }
-}
+//  MarkForged MK II //
+let mkfOpen = false;
+document.addEventListener('click', function(event) {
+  var hiddenContent = "mkfHidden";
+  var isClickInside = mkfHidden.contains(event.target);
+  var isClickHead = mkfHead.contains(event.target);
 
-function expandForm3() {
-  g++;
-  if (g%2 === 1) {
-    document.getElementById("form3Hidden").style.display = "block";
-  } else {
-    document.getElementById("form3Hidden").style.display = "none";
+  if ((isClickHead) && (mkfOpen == false)) {
+    document.getElementById(hiddenContent).style.display = "block";
+    mkfOpen = true;
+  } else if ((isClickHead) && mkfOpen == true) {
+    document.getElementById(hiddenContent).style.display = "none";
+    mkfOpen = false;
+  } else if ((!isClickInside) && (!isClickHead) && (mkfOpen == true)) {
+    document.getElementById(hiddenContent).style.display = "none";
+    mkfOpen = false;
   }
-}
+});
 
-function expand2500() {
-  h++;
-  if (h%2 === 1) {
-    document.getElementById("projet2500Hidden").style.display = "block";
-  } else {
-    document.getElementById("projet2500Hidden").style.display = "none";
-  }
-}
+// Dimension //
+let dimensionOpen = false;
+document.addEventListener('click', function(event) {
+  var hiddenContent = "dimensionHidden";
+  var isClickInside = dimensionHidden.contains(event.target);
+  var isClickHead = dimensionHead.contains(event.target);
 
-function expand3L() {
-  i++;
-  if (i%2 === 1) {
-    document.getElementById("form3LHidden").style.display = "block";
-  } else {
-    document.getElementById("form3LHidden").style.display = "none";
+  if ((isClickHead) && (dimensionOpen == false)) {
+    document.getElementById(hiddenContent).style.display = "block";
+    dimensionOpen = true;
+  } else if ((isClickHead) && dimensionOpen == true) {
+    document.getElementById(hiddenContent).style.display = "none";
+    dimensionOpen = false;
+  } else if ((!isClickInside) && (!isClickHead) && (dimensionOpen == true)) {
+    document.getElementById(hiddenContent).style.display = "none";
+    dimensionOpen = false;
   }
-}
+});
 
-function expandBlackBelt() {
-  j++;
-  if (j%2 === 1) {
-    document.getElementById("blackBeltHidden").style.display = "block";
-  } else {
-    document.getElementById("blackBeltHidden").style.display = "none";
-  }
-}
+// Form 3 //
+let f3open = false;
+document.addEventListener('click', function(event) {
+  var hiddenContent = "form3Hidden";
+  var isClickInside = form3Hidden.contains(event.target);
+  var isClickHead = f3Head.contains(event.target);
 
-function expand460() {
-  k++;
-  if (k%2 === 1) {
-    document.getElementById("460Hidden").style.display = "block";
-  } else {
-    document.getElementById("460Hidden").style.display = "none";
+  if ((isClickHead) && (f3open == false)) {
+    document.getElementById(hiddenContent).style.display = "block";
+    f3open = true;
+  } else if ((isClickHead) && f3open == true) {
+    document.getElementById(hiddenContent).style.display = "none";
+    f3open = false;
+  } else if ((!isClickInside) && (!isClickHead) && (f3open == true)) {
+    document.getElementById(hiddenContent).style.display = "none";
+    f3open = false;
   }
-}
+});
+
+// ProJet 2500 //
+let pj2500open = false;
+document.addEventListener('click', function(event) {
+  var hiddenContent = "projet2500Hidden";
+  var isClickInside = projet2500Hidden.contains(event.target);
+  var isClickHead = projet2500Head.contains(event.target);
+
+  if ((isClickHead) && (pj2500open == false)) {
+    document.getElementById(hiddenContent).style.display = "block";
+    pj2500open = true;
+  } else if ((isClickHead) && pj2500open == true) {
+    document.getElementById(hiddenContent).style.display = "none";
+    pj2500open = false;
+  } else if ((!isClickInside) && (!isClickHead) && (pj2500open == true)) {
+    document.getElementById(hiddenContent).style.display = "none";
+    pj2500open = false;
+  }
+});
+
+// Form 3L //
+let f3lOpen = false;
+document.addEventListener('click', function(event) {
+  var hiddenContent = "form3LHidden";
+  var isClickInside = form3LHidden.contains(event.target);
+  var isClickHead = f3LHead.contains(event.target);
+
+  if ((isClickHead) && (f3lOpen == false)) {
+    document.getElementById(hiddenContent).style.display = "block";
+    f3lOpen = true;
+  } else if ((isClickHead) && f3lOpen == true) {
+    document.getElementById(hiddenContent).style.display = "none";
+    f3lOpen = false;
+  } else if ((!isClickInside) && (!isClickHead) && (f3lOpen == true)) {
+    document.getElementById(hiddenContent).style.display = "none";
+    f3lOpen = false;
+  }
+});
+
+// BlackBelt //
+let blackBeltopen = false;
+document.addEventListener('click', function(event) {
+  var hiddenContent = "blackBeltHidden";
+  var isClickInside = blackBeltHidden.contains(event.target);
+  var isClickHead = blackBeltHead.contains(event.target);
+
+  if ((isClickHead) && (blackBeltopen == false)) {
+    document.getElementById(hiddenContent).style.display = "block";
+    blackBeltopen = true;
+  } else if ((isClickHead) && blackBeltopen == true) {
+    document.getElementById(hiddenContent).style.display = "none";
+    blackBeltopen = false;
+  } else if ((!isClickInside) && (!isClickHead) && (blackBeltopen == true)) {
+    document.getElementById(hiddenContent).style.display = "none";
+    blackBeltopen = false;
+  }
+});
+
+// ProJet 460 Plus //
+let pj460open = false;
+document.addEventListener('click', function(event) {
+  var hiddenContent = "pj460Hidden";
+  var isClickInside = pj460Hidden.contains(event.target);
+  var isClickHead = pj460Head.contains(event.target);
+
+  if ((isClickHead) && (pj460open == false)) {
+    document.getElementById(hiddenContent).style.display = "block";
+    pj460open = true;
+  } else if ((isClickHead) && pj460open == true) {
+    document.getElementById(hiddenContent).style.display = "none";
+    pj460open = false;
+  } else if ((!isClickInside) && (!isClickHead) && (pj460open == true)) {
+    document.getElementById(hiddenContent).style.display = "none";
+    pj460open = false;
+  }
+});

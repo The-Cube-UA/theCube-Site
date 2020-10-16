@@ -352,7 +352,7 @@ var ua_coe_submit_request = {"ajax_url":"https:\/\/thecube.eng.ua.edu\/wp-admin\
 		<!-- Dremel 3D45 -->
 
 		<table class="tbl">
-		  <tr class="hoverable" onclick="expandDremel()">
+		  <tr class="hoverable" id="dremelHead">
 		    <td class="model rowPadding">Dremel 3D45</td>
 		    <td class="count">8</td>
 		    <td class="material">PLA, ABS, Nylon</td>
@@ -375,7 +375,7 @@ var ua_coe_submit_request = {"ajax_url":"https:\/\/thecube.eng.ua.edu\/wp-admin\
 		<!-- Ultimaker S5 -->
 
 		<table class="tbl">
-		  <tr class="hoverable" onclick="expandS5()">
+		  <tr class="hoverable" id="s5head">
 		    <td class="model rowPadding">Ultimaker S5</td>
 		    <td class="count">1</td>
 		    <td class="material">PLA, ToughPLA, PVA</td>
@@ -398,7 +398,7 @@ var ua_coe_submit_request = {"ajax_url":"https:\/\/thecube.eng.ua.edu\/wp-admin\
 		<!-- MarkForged -->
 
 		<table class="tbl">
-		  <tr class="hoverable" onclick="expandMKF()">
+		  <tr class="hoverable" id="mkfHead">
 		    <td class="model rowPadding">MarkForged MK II</td>
 		    <td class="count">1</td>
 		    <td class="material">Onyx, Carbon Fiber, Kevlar</td>
@@ -421,7 +421,7 @@ var ua_coe_submit_request = {"ajax_url":"https:\/\/thecube.eng.ua.edu\/wp-admin\
 		<!-- Dimension -->
 
 		<table class="tbl">
-		  <tr class="hoverable" onclick="expandDimension()">
+		  <tr class="hoverable" id="dimensionHead">
 		    <td class="model rowPadding">Dimension 1200es</td>
 		    <td class="count">1</td>
 		    <td class="material">ABS, Soluble</td>
@@ -458,7 +458,7 @@ var ua_coe_submit_request = {"ajax_url":"https:\/\/thecube.eng.ua.edu\/wp-admin\
 		<!-- Form 3 -->
 
 		<table class="tbl">
-		  <tr class="hoverable" onclick="expandForm3()">
+		  <tr class="hoverable" id="f3Head">
 		    <td class="model rowPadding">Form 3</td>
 		    <td class="count">1</td>
 		    <td class="material">Resin</td>
@@ -481,7 +481,7 @@ var ua_coe_submit_request = {"ajax_url":"https:\/\/thecube.eng.ua.edu\/wp-admin\
 		<!-- Projet 2500 Plus -->
 
 		<table class="tbl">
-		  <tr class="hoverable" onclick="expand2500()">
+		  <tr class="hoverable" id="projet2500Head">
 		    <td class="model rowPadding">Projet 2500 Plus</td>
 		    <td class="count">1</td>
 		    <td class="material">Resin</td>
@@ -504,7 +504,7 @@ var ua_coe_submit_request = {"ajax_url":"https:\/\/thecube.eng.ua.edu\/wp-admin\
 		<!-- Form 3L -->
 
 		<table class="tbl">
-		  <tr class="hoverable" onclick="expand3L()">
+		  <tr class="hoverable" id="f3LHead">
 		    <td class="model rowPadding">Form 3L</td>
 		    <td class="count">1</td>
 		    <td class="material">Resin</td>
@@ -541,7 +541,7 @@ var ua_coe_submit_request = {"ajax_url":"https:\/\/thecube.eng.ua.edu\/wp-admin\
 		<!-- Blackbelt -->
 
 		<table class="tbl">
-		  <tr class="hoverable" onclick="expandBlackBelt()">
+		  <tr class="hoverable" id="blackBeltHead">
 		    <td class="model rowPadding">Blackbelt</td>
 		    <td class="count">1</td>
 		    <td class="material">nGen</td>
@@ -564,8 +564,8 @@ var ua_coe_submit_request = {"ajax_url":"https:\/\/thecube.eng.ua.edu\/wp-admin\
 		<!-- ProJet 460 Plus -->
 
 		<table class="tbl">
-		  <tr class="hoverable" onclick="expand460()" >
-		    <td class="model rowPadding">Test</td>
+		  <tr class="hoverable" id="pj460Head">
+		    <td class="model rowPadding">Projet 460 Plus</td>
 		    <td class="count">1</td>
 		    <td class="material">Powder</td>
 		    <td class="volume">8" x 8" x 10"</td>
@@ -575,7 +575,7 @@ var ua_coe_submit_request = {"ajax_url":"https:\/\/thecube.eng.ua.edu\/wp-admin\
 		  </tr>
 		</table>
 
-		<table class="tbl hiddenContent460" id="460Hidden">
+		<table class="tbl hiddenContent460" id="pj460Hidden">
 			<tbody class="hiddenBody">
 				<td class="rowPadding hiddenRow">
 					Hidden Content
