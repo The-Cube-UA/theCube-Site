@@ -1,5 +1,6 @@
 var a = 0;var b = 0;var c = 0;var d = 0;var e = 0;var f = 0;var g = 0;var h = 0;var i = 0;var j = 0;var k = 0;
 
+
 // Functions for dropdown arrows.
 function bestPrinterExpand() {
   a++;
@@ -38,11 +39,15 @@ document.addEventListener('click', function(event) {
     document.getElementById(hiddenContent).style.display = "block";
     dremelOpen = true;
   } else if ((isClickHead) && dremelOpen == true) {
-    document.getElementById(hiddenContent).style.display = "none";
-    dremelOpen = false;
+    if (dremelLock == false){
+      document.getElementById(hiddenContent).style.display = "none";
+      dremelOpen = false;
+    }
   } else if ((!isClickInside) && (!isClickHead) && (dremelOpen == true)) {
-    document.getElementById(hiddenContent).style.display = "none";
-    dremelOpen = false;
+    if (dremelLock == false){
+      document.getElementById(hiddenContent).style.display = "none";
+      dremelOpen = false;
+    }
   }
 });
 
@@ -197,3 +202,13 @@ document.addEventListener('click', function(event) {
     pj460open = false;
   }
 });
+
+// Lock Functions //
+let lockDremel = false;
+function lockDremel() {
+  if (lockDremel == false) {
+    lockDremel = true;
+  } else {
+    lockDremel = true;
+  }
+}

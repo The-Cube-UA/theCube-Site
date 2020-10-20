@@ -1,3 +1,7 @@
+.notice {
+  line-height: 1.4;
+}
+
 .questionWrapperEads {
   width: 90%;
   margin: 0 3%;
@@ -117,9 +121,10 @@ td {
   border-color: #C2C3C4;
 }
 
-tr.hoverable:hover {
+.hoverable:hover {
   background-color: #A0A1A290;
   transition: .15s;
+  cursor: pointer;
 }
 
 .tbl {
@@ -139,20 +144,13 @@ tr.hoverable:hover {
   color: #A0A1A2;
 }
 
-.rowPadding {
-  padding-left: 10px;
-}
-
-.model {width: 12.75%}
-.count {
-  text-align: center;
-  width: 6.25%;
-}
-.material {width: 18%}
-.volume {width: 12.5%}
-.resolution {width: 17.5%}
-.submit {width: 18.5%}
-.information {width: 14%}
+.rowPadding {padding-left: 10px}
+.model {width: 11%; padding-right: 2%}
+.count {text-align:center; width: 10%; padding-right: 2%}
+.material {width: 19%; padding-right: 2%}
+.volume {width: 12%; padding-right: 2%}
+.resolution {width: 17%; padding-right: 2%}
+.submit {width: 17%; padding-right: 2%}
 
 .btn {
   min-width: 350px;
@@ -194,7 +192,29 @@ tr.hoverable:hover {
 .hiddenContentBlackBelt {display: none;}
 .hiddenContent460 {display: none;}
 
+.hiddenBody {width:100%}
+
+.hiddenData2,.hiddenData1 {
+  width: 50%;
+}
+
 .printerPic {
-  width: 170px;
-  height: auto;
+  width: 20%;
+  display: inline-block;
+  float: right;
+  padding-right: 3%;
+}
+
+.hiddenCol {
+  width: 74%;
+  display: inline-block;
+  padding-left: 3%;
+}
+
+.hiddenText, .hiddenSubText {
+  margin: 0px;
+}
+
+.hiddenSubText {
+  padding-top: 11px;
 }
