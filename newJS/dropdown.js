@@ -39,11 +39,13 @@ document.addEventListener('click', function(event) {
     document.getElementById(hiddenContent).style.display = "block";
     dremelOpen = true;
   } else if ((isClickHead) && dremelOpen == true) {
+    if (dremelLock == false){
       document.getElementById(hiddenContent).style.display = "none";
       dremelOpen = false;
-  } else if ((!isClickInside) && (!isClickHead) && (dremelOpen == true)) {
-    document.getElementById(hiddenContent).style.display = "none";
-    s5Open = false;
+    }
+  } else if ((!isClickInside) && (!isClickHead)) {
+      document.getElementById(hiddenContent).style.display = "none";
+      dremelOpen = false;
   }
 });
 
@@ -198,3 +200,13 @@ document.addEventListener('click', function(event) {
     pj460open = false;
   }
 });
+
+/*/ Lock Functions //
+let lockDremel = false;
+function lockDremelFunction() {
+  if (lockDremel == false) {
+    lockDremel = true;
+  } else {
+    lockDremel = true;
+  }
+}*/
