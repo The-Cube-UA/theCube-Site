@@ -18,7 +18,7 @@
   color: #444;
   padding-top: 20px;
   font-size: 36px;
-  min-width: 300px;
+  min-width: 250px;
   font-family: 'Lato', 'Open Sans', Helvetica, Arial, sans-serif;
 
   -webkit-user-select: none; /* Make text non-selectable Safari */
@@ -30,7 +30,7 @@
 .headerTextEads {
   position: relative;
   margin: 11px 100px;
-  min-width: 250px;
+
 }
 
 .headerTextEads::before {
