@@ -39,10 +39,8 @@ document.addEventListener('click', function(event) {
     document.getElementById(hiddenContent).style.display = "block";
     dremelOpen = true;
   } else if ((isClickHead) && dremelOpen == true) {
-    if (dremelLock == false){
       document.getElementById(hiddenContent).style.display = "none";
       dremelOpen = false;
-    }
   } else if ((!isClickInside) && (!isClickHead)) {
       document.getElementById(hiddenContent).style.display = "none";
       dremelOpen = false;
