@@ -3,6 +3,9 @@ span {
   text-transform: uppercase;
 }
 
+.pageHeaderWrapperEads { width: 60%; min-width: 650px;}
+
+.col-md-6 { width: 40%}
 /* Button to Forms */
 .btn-wrapper-Eads {
   width: 100%;
