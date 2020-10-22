@@ -5,7 +5,7 @@ span {
 
 .pageHeaderWrapperEads { width: 60%; min-width: 650px;}
 
-.eadsHeaderCol { width: 40%}
+.col-md-6 { width: 40%}
 /* Button to Forms */
 .btn-wrapper-Eads {
   width: 100%;
