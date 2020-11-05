@@ -25,7 +25,10 @@
 	<!-- Custom CSS file -->
 	<link href="wp-content/themes/ua-theme/assets/css/custom.css" rel="stylesheet" />
 
-	
+	<!-- 2020 Update CSS file -->
+	<link rel="stylesheet" href="newCSS\siteWideAdjustmentsEads.css">
+	<link rel="stylesheet" href="newCSS\instructions.css">
+
 	<link rel="apple-touch-icon" sizes="57x57" href="wp-content/themes/ua-theme/assets/img/favicons/apple-touch-icon-57x57.png" />
 	<link rel="apple-touch-icon" sizes="60x60" href="wp-content/themes/ua-theme/assets/img/favicons/apple-touch-icon-60x60.png" />
 	<link rel="apple-touch-icon" sizes="72x72" href="wp-content/themes/ua-theme/assets/img/favicons/apple-touch-icon-72x72.png" />
@@ -84,7 +87,7 @@ var ua_coe_submit_request = {"ajax_url":"https:\/\/thecube.eng.ua.edu\/wp-admin\
 <script type='text/javascript' src='wp-content/themes/ua-theme-coe-child/assets/js/script.js@ver=4.9.10'></script>
 <link rel='https://api.w.org/' href='wp-json/index.html' />
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" />
 <meta name="generator" content="WordPress 4.9.10" />
 <link rel="canonical" href="index.html@p=109.html" />
 <link rel='shortlink' href='index.html@p=109.html' />
@@ -205,7 +208,9 @@ var ua_coe_submit_request = {"ajax_url":"https:\/\/thecube.eng.ua.edu\/wp-admin\
 				<div class="container">
 					<div class="navbar-container">
 						<div class="navbar-header">
-														<a class="navbar-brand ua-logo ua-logo-eng-dept-cube" href="index.html" title="The Cube" rel="home">
+							<a href="index.html">
+								<img src="wp-content\uploads\2019\01\Cube-Logo_-horizontal_4-color-300x51.png" alt="Cube Logo" class="cubeLogoHeaderEads">
+							</a>
 
 								<span class="sr-only">The Cube</span>
 							</a>
@@ -219,7 +224,7 @@ var ua_coe_submit_request = {"ajax_url":"https:\/\/thecube.eng.ua.edu\/wp-admin\
 						<nav title="Primary Navigation" class="navbar-right">
 
 
-							
+
 										<ul id="ua-main-nav" class="nav navbar-nav main-nav">
 											<li class="visible-xs visible-sm">
 					                            <a href="index.html@p=109.html#" class="nav-toggle text-center">
@@ -274,11 +279,10 @@ var ua_coe_submit_request = {"ajax_url":"https:\/\/thecube.eng.ua.edu\/wp-admin\
 <div class="breadcrumb-wrapper">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6 col-sm-6 col-xs-12">
-				<h1 class="breadcrumb-page-title">
-					Instructions				</h1>
+			<div class="pageHeaderWrapperEads  col-md-6 col-sm-6 col-xs-12">
+				<h1 class="breadcrumb-page-title"><span class="headerTextEads">Instructions</span></h1>
 			</div> <!-- .col-md-6 -->
-			<div class="col-md-6 col-sm-6 col-xs-12">
+			<div class=" col-md-6 col-sm-6 col-xs-12">
 				<ol class="breadcrumb">
 					<li><a href="index.html">Home</a></li>
 					<li>Instructions</li>				</ol>
@@ -293,14 +297,17 @@ var ua_coe_submit_request = {"ajax_url":"https:\/\/thecube.eng.ua.edu\/wp-admin\
                     <article id="post-109" class="news margin-top-20">
 			<div class="post-thumbnail">
 					</div> <!-- .post-thumbnail -->
-	
+
 	<div class="news-body">
-		<h2>3DprinterOS</h2>
-<p><a href="wp-content/themes/ua-theme-coe-child/assets/instructions/3DprinterOS.pdf">pdf instructions</a></p>
-<h2>Solidworks Intro</h2>
-<p><a href="wp-content/themes/ua-theme-coe-child/assets/instructions/SolidWorks-Tutorial.pdf">pdf instructions</a></p>
-<h2>Adobe Illustrator for Laser Engraving</h2>
-<p><a href="wp-content/themes/ua-theme-coe-child/assets/instructions/Laser.pdf">pdf instructions</a></p>
+		<h2>3DPrinterOS Refresher</h2>
+			<p>This is a review of the process to turn your .STL into a completed part. Please note you will still need to schedule an introductory course by <a href="mailto:thecube@ua.edu">emailing us</a> to register an account.</p>
+			<p><a href="wp-content/themes/ua-theme-coe-child/assets/instructions/3DprinterOS.pdf" target="_blank">3DPrinterOS Review PDF</a></p>
+		<h2>Solidworks Introduction</h2>
+			<p>The attatched PDF gives a brief introduction to SolidWorks. For more detail, explore YouTube or consider taking the University's SolidWorks course. The University also provides access to the Autodesk Suite, although any software capable of exporting .STLs will work.</p>
+			<p><a href="wp-content/themes/ua-theme-coe-child/assets/instructions/SolidWorks-Tutorial.pdf" target="_blank">SolidWorks Introductory PDF</a></p>
+		<h2>Laser Cutting & Engraving Tutorial</h2>
+			<p>The Cube also houses a laser cutter, which uses Adobe Illustrator to produce parts. Note that <a href="https://www.instructables.com/Tutorial-Laser-Cutting-from-Solidworks/">SolidWorks can export 2D drawings with the .AI file extension</a> allowing for more precise measurements than by simply drawing a part in Adobe Illustrator.</p>
+			<p><a href="wp-content/themes/ua-theme-coe-child/assets/instructions/Laser.pdf" target="_blank">Laser Cutter PDF Instructions</a></p>
 
 			</div> <!-- .news-body -->
 </article>
@@ -309,30 +316,6 @@ var ua_coe_submit_request = {"ajax_url":"https:\/\/thecube.eng.ua.edu\/wp-admin\
         </div> <!-- .container -->
     </section>
 	<footer class="bg-alt">
-				<div class="container">
-	    	<div class="row">
-				<div class="col-md-4">
-					<h2>Academic Departments</h2><div class="textwidget custom-html-widget"><a href="http://aem.eng.ua.edu/">Aerospace Engineering and Mechanics</a> <br>
-<a href="http://che.eng.ua.edu/">Chemical and Biological Engineering</a><br>
-<a href="http://cce.eng.ua.edu/">Civil, Construction and Environmental Engineering</a><br>
-<a href="http://cs.ua.edu/">Computer Science</a><br>
-<a href="http://ece.eng.ua.edu/">Electrical and Computer Engineering</a><br>
-<a href="http://me.eng.ua.edu/">Mechanical Engineering</a><br>
-<a href="http://mte.eng.ua.edu/">Metallurgical and Materials Engineering</a></div>				</div> <!-- .col-md-4 -->
-
-				<div class="col-md-4">
-									</div> <!-- .col-md-4 -->
-
-				<div class="col-md-4">
-					<h2>Research Centers</h2><div class="textwidget custom-html-widget"><a href="https://iac.ua.edu/">Alabama Industrial Assessment Center</a><br>
-<a href="http://caps.ua.edu/">Center for Advanced Public Safety</a><br>
-<a href="http://cavt.eng.ua.edu/">Center for Advanced Vehicle Technologies</a><br>
-<a href="http://mint.ua.edu/">Center for Materials for Information Technologies</a><br>
-<a href="http://csi.eng.ua.edu/">Center for Sustainable Infrastructure</a><br>
-<a href="http://icast.eng.ua.edu/">Integrative Center for Athletic and Sport Technologies</a><br>
-<a href="http://utca.eng.ua.edu/">University Transportation Center for Alabama</a></div>				</div> <!-- .col-md-4 -->
-			</div> <!-- .row -->
-		</div> <!-- .container -->
 				<div class="footer-copyright bg-primary">
 			<div class="container">
 				<div class="row">

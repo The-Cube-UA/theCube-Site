@@ -25,7 +25,10 @@
 	<!-- Custom CSS file -->
 	<link href="wp-content/themes/ua-theme/assets/css/custom.css" rel="stylesheet" />
 
-	
+	<!-- 2020 Revision CSS -->
+	<link rel="stylesheet" href="newCSS/siteWideAdjustmentsEads.css">
+	<link rel="stylesheet" href="newCSS/aboutTheCube.css">
+
 	<link rel="apple-touch-icon" sizes="57x57" href="wp-content/themes/ua-theme/assets/img/favicons/apple-touch-icon-57x57.png" />
 	<link rel="apple-touch-icon" sizes="60x60" href="wp-content/themes/ua-theme/assets/img/favicons/apple-touch-icon-60x60.png" />
 	<link rel="apple-touch-icon" sizes="72x72" href="wp-content/themes/ua-theme/assets/img/favicons/apple-touch-icon-72x72.png" />
@@ -84,7 +87,7 @@ var ua_coe_submit_request = {"ajax_url":"https:\/\/thecube.eng.ua.edu\/wp-admin\
 <script type='text/javascript' src='wp-content/themes/ua-theme-coe-child/assets/js/script.js@ver=4.9.10'></script>
 <link rel='https://api.w.org/' href='wp-json/index.html' />
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" />
 <meta name="generator" content="WordPress 4.9.10" />
 <link rel="canonical" href="index.html@p=9.html" />
 <link rel='shortlink' href='index.html@p=9.html' />
@@ -205,7 +208,9 @@ var ua_coe_submit_request = {"ajax_url":"https:\/\/thecube.eng.ua.edu\/wp-admin\
 				<div class="container">
 					<div class="navbar-container">
 						<div class="navbar-header">
-														<a class="navbar-brand ua-logo ua-logo-eng-dept-cube" href="index.html" title="The Cube" rel="home">
+							<a href="index.html">
+								<img src="wp-content\uploads\2019\01\Cube-Logo_-horizontal_4-color-300x51.png" alt="Cube Logo" class="cubeLogoHeaderEads">
+							</a>
 
 								<span class="sr-only">The Cube</span>
 							</a>
@@ -219,7 +224,7 @@ var ua_coe_submit_request = {"ajax_url":"https:\/\/thecube.eng.ua.edu\/wp-admin\
 						<nav title="Primary Navigation" class="navbar-right">
 
 
-							
+
 										<ul id="ua-main-nav" class="nav navbar-nav main-nav">
 											<li class="visible-xs visible-sm">
 					                            <a href="index.html@p=9.html#" class="nav-toggle text-center">
@@ -274,9 +279,8 @@ var ua_coe_submit_request = {"ajax_url":"https:\/\/thecube.eng.ua.edu\/wp-admin\
 <div class="breadcrumb-wrapper">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6 col-sm-6 col-xs-12">
-				<h1 class="breadcrumb-page-title">
-					About The Cube				</h1>
+			<div class="pageHeaderWrapperEads col-md-6 col-sm-6 col-xs-12">
+				<h1 class="pageHeaderEads breadcrumb-page-title"><span class="headerTextEads">About The Cube</span></h1>
 			</div> <!-- .col-md-6 -->
 			<div class="col-md-6 col-sm-6 col-xs-12">
 				<ol class="breadcrumb">
@@ -293,19 +297,33 @@ var ua_coe_submit_request = {"ajax_url":"https:\/\/thecube.eng.ua.edu\/wp-admin\
                     <article id="post-9" class="news margin-top-20">
 			<div class="post-thumbnail">
 					</div> <!-- .post-thumbnail -->
-	
+
 	<div class="news-body">
 		<div class="entry-content">
-<p><img class="wp-image-62 pull-right margin-left-10 img-responsive " src="wp-content/uploads/2019/01/students_at_desks_1-300x200.jpg" alt="Students working in The Cube" srcset="wp-content/uploads/2019/01/students_at_desks_1-300x200.jpg 300w, wp-content/uploads/2019/01/students_at_desks_1.jpg 600w" sizes="(max-width: 497px) 100vw, 497px" />The College of Engineering set up The Cube to better prepare students for the sorts of environments they will see when entering the work force and help them develop the skills critical in getting products to market.</p>
-<p>Any student, staff or faculty member on campus can use The Cube’s <a href="http://3dlab.eng.ua.edu/equipment/">three printers</a> by <a href="http://3dlab.eng.ua.edu/submit-a-design/">submitting a design</a>.</p>
-<p>The Cube is managed full time by students from within The University of Alabama with oversight from a staff technician and member of the engineering faculty. The staff controls the printing process to maximize the use of the printers.</p>
+<p><img class="aboutCubePic" src="newPhotos\displayTable.jpg" alt="Cube Display Table" srcset="newPhotos\displayTable.jpg 300w, newPhotos\displayTable.jpg 600w"/>The College of Engineering created The Cube to prepare students environments similar to what they will see when entering the workforce and help them develop  skills critical to creating production level designs.</p>
+<style media="screen">
+	.aboutCubePic {
+		width: 400px;
+		height: auto;
+		float: right;
+	}
+</style>
+<p>Any student, staff or faculty member on campus can use The Cube’s <a class="link" href="https://thecube.eng.ua.edu/our-equipment/">printers</a> by submitting a design either through <a class="link" href="https://thecube.eng.ua.edu/instructions/">3DPrinterOS</a>, our online slicer, or through <a class="link" href="https://thecube.eng.ua.edu/submit-a-design/">the Project Submission Form</a>.</p>
+<p>The Cube is managed full time by students from within The University of Alabama with oversight from a <a class="link" href="https://thecube.eng.ua.edu/contact-the-lab/">staff technician</a>.</p>
 <p>Staff can:</p>
 <ul>
-<li>Take a ready-made drawing, make any necessary modifications and place it in a printer’s queue</li>
-<li>Draw an idea or help with a drawing to create a file for printing</li>
+<li>Teach 3DPrinterOS</li>
+<li>Convert SolidWorks Part file to .STL (printable file)</li>
+<li>Answer Material and Printer Questions</li>
 </ul>
-<p>Drawings will be checked against images from the Internet to ensure there is no copyright or restriction. Users are asked to modify downloaded files to ensure they are original.</p>
+<p>Drawings will be checked against images from the Internet to ensure there is no copyright or restriction.</p>
 </div>
+
+<style media="screen">
+	.link {
+		font-weight: bold;
+	}
+</style>
 
 			</div> <!-- .news-body -->
 </article>
@@ -314,30 +332,6 @@ var ua_coe_submit_request = {"ajax_url":"https:\/\/thecube.eng.ua.edu\/wp-admin\
         </div> <!-- .container -->
     </section>
 	<footer class="bg-alt">
-				<div class="container">
-	    	<div class="row">
-				<div class="col-md-4">
-					<h2>Academic Departments</h2><div class="textwidget custom-html-widget"><a href="http://aem.eng.ua.edu/">Aerospace Engineering and Mechanics</a> <br>
-<a href="http://che.eng.ua.edu/">Chemical and Biological Engineering</a><br>
-<a href="http://cce.eng.ua.edu/">Civil, Construction and Environmental Engineering</a><br>
-<a href="http://cs.ua.edu/">Computer Science</a><br>
-<a href="http://ece.eng.ua.edu/">Electrical and Computer Engineering</a><br>
-<a href="http://me.eng.ua.edu/">Mechanical Engineering</a><br>
-<a href="http://mte.eng.ua.edu/">Metallurgical and Materials Engineering</a></div>				</div> <!-- .col-md-4 -->
-
-				<div class="col-md-4">
-									</div> <!-- .col-md-4 -->
-
-				<div class="col-md-4">
-					<h2>Research Centers</h2><div class="textwidget custom-html-widget"><a href="https://iac.ua.edu/">Alabama Industrial Assessment Center</a><br>
-<a href="http://caps.ua.edu/">Center for Advanced Public Safety</a><br>
-<a href="http://cavt.eng.ua.edu/">Center for Advanced Vehicle Technologies</a><br>
-<a href="http://mint.ua.edu/">Center for Materials for Information Technologies</a><br>
-<a href="http://csi.eng.ua.edu/">Center for Sustainable Infrastructure</a><br>
-<a href="http://icast.eng.ua.edu/">Integrative Center for Athletic and Sport Technologies</a><br>
-<a href="http://utca.eng.ua.edu/">University Transportation Center for Alabama</a></div>				</div> <!-- .col-md-4 -->
-			</div> <!-- .row -->
-		</div> <!-- .container -->
 				<div class="footer-copyright bg-primary">
 			<div class="container">
 				<div class="row">

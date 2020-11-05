@@ -1,5 +1,14 @@
 :root {--after-bar-offset: 130px;}
 
+.site-content {
+  padding: 0px;
+}
+
+.homePagePicture {
+  width:100%;
+  margin: 0px;
+}
+
 /* Cube Hours Font Sizes, ETC*/
 .hoursEads h3 {
   color: var(--crimson);

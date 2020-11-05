@@ -1,9 +1,4 @@
-span {
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.pageHeaderWrapperEads { width: 60%; min-width: 650px;}
+span, a {  font-weight: bold }
 
 .eadsHeaderCol { width: 40%}
 /* Button to Forms */

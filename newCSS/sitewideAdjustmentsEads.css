@@ -1,5 +1,6 @@
 :root {--crimson: #900f09;}
 
+
 .breadcrumb-wrapper {
   background-color: white;
   border-bottom-color: white;
@@ -29,8 +30,9 @@
 
 .headerTextEads {
   position: relative;
-  margin: 11px 100px;
-
+  margin: 11px 00px 11px 50px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .headerTextEads::before {

@@ -1,0 +1,13 @@
+.cubeH3 {
+  margin-top: 0px;
+}
+
+.headerTextEads {
+  max-width: 320px;
+}
+
+@media (max-width: 475px) {
+  .headerTextEads {
+    width: 130px;
+  }
+}
