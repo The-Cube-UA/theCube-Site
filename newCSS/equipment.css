@@ -1,3 +1,8 @@
+.bothSpecialtyPrintersBrokenATMhiddenFromSite {
+  /* As of writing this, the BlackBelt and 460 are both broken this class hides their section. */
+  display: none;
+}
+
 .pageHeaderWrapperEads {  width: 50%  }
 
 @media (max-width: 1200px) {

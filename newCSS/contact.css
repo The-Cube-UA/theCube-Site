@@ -11,3 +11,9 @@
     width: 130px;
   }
 }
+
+.contactHead { margin-bottom: 6px }
+
+.contact, .contactFor { margin-bottom: 0px }
+
+.contactFor { font-size: 12.5px }
