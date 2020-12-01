@@ -16,3 +16,10 @@
 .bullet-pnt-head {
   margin-bottom: 0px;
 }
+
+@media (max-width: 500px) {
+  .aboutCubePic {
+    width: 100%;
+    display: block;
+  }
+}
