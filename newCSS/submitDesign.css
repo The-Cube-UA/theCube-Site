@@ -1,6 +1,6 @@
 .bold-span {  font-weight: bold }
 
-.eadsHeaderCol { width: 40%}
+.eadsHeaderCol { width: 40% }
 
 .comparison-container {
   display: block;
@@ -12,7 +12,7 @@
   width: 47%;
   display: inline-block;
   text-align: center;
-  
+
   padding-left: 0px;
   padding-right: 0px;
   margin-left: 0px;
@@ -23,7 +23,7 @@
   width: 5%;
   display: inline-block;
   text-align: center;
-  
+
   padding-left: 0px;
   padding-right: 0px;
   margin-left: 0px;
